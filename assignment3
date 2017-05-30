@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS - Assignment 3 - Position relative and Obsolute</title>
+<style> 
+.dropdown{
+	position:relative;
+	display:block;
+
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background-color:#ABF2E9;
+	width:200px;
+	height:100px;
+	z-index:1;
+}
+.dropdown:hover .dropdown-content
+{ 
+display:block;
+}
+</style>
+</head>
+
+<body>
+<div class="dropdown">
+<span>Mouse over me</span>
+<div class="dropdown-content">
+<p>  ADCAD </p>
+</div>
+</div>
+
+</body>
+</html>
